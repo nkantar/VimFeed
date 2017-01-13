@@ -1,0 +1,16 @@
+-
+  site_name: 'Nik Kantar'
+  site_url: http://nkantar.com
+  feed_url: http://nkantar.com/feed/vim.xml
+-
+  site_name: 'How I Vim'
+  site_url: http://howivim.com
+  feed_url: http://howivim.com/feed.xml
+-
+  site_name: 'Today I Learned: Vim'
+  site_url: http://howivim.com
+  feed_url: http://tilvim.com/feed.xml
+-
+  site_name: 'usevim'
+  site_url: http://usevim.com
+  feed_url: http://usevim.com/feed.rss

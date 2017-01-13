@@ -1,0 +1,123 @@
+body {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 50px 15px;
+    background: $blue-dark;
+    font-family: $mononoki;
+    color: $blue-light;
+    font-size: 0.85rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+    color: $blue-light;
+}
+
+a {
+    color: $blue-faint;
+
+    &:hover,
+    &:active {
+        color: $blue-dark;
+        background: $blue-faint;
+        text-decoration: none;
+    }
+}
+
+.header {
+    text-align: center;
+
+    h1 {
+        a {
+            text-decoration: none;
+        }
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+            display: inline-block;
+        }
+    }
+}
+
+.entry {
+    margin: 25px 0;
+
+    div {
+        border-bottom: 1px dashed $gray;
+
+        &:last-child {
+            border: none;
+        }
+
+        .label {
+            color: $gray;
+
+        }
+
+        a {
+            &.site_url {
+                color: $green;
+
+                &:hover,
+                &:active {
+                    background: $green;
+                }
+            }
+
+            &.entry_url {
+                color: $yellow;
+
+                &:hover,
+                &:active {
+                    background: $yellow;
+                }
+            }
+
+            &:hover,
+            &:active {
+                color: $blue-dark;
+                text-decoration: none;
+            }
+        }
+
+    }
+}
+
+.footer {
+    text-align: center;
+
+    a {
+        &.red {
+            color: $red;
+
+            &:hover,
+            &:active {
+                background: $red;
+            }
+        }
+
+        &.vimgreen {
+            color: $vimgreen;
+
+            &:hover,
+            &:active {
+                background: $vimgreen;
+            }
+        }
+
+        &:hover,
+        &:active {
+            color: $blue-dark;
+            text-decoration: none;
+        }
+    }
+}

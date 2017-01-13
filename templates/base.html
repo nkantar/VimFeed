@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+
+        <!-- voodoo -->
+        <meta charset='utf-8'>
+        <meta name='viewport' content='width=device-width'>
+
+        <!-- basic meta -->
+        <title>VimFeed{% if self.title() %} | {% block title %}{% endblock %}{% endif %}</title>
+        <meta name='description' content="Vim news from 'round the world." />
+        <link rel='author' href='humans.txt' />
+
+        <!-- OG -->
+        <meta property='og:title' content='VimFeed'>
+        <meta property='og:type' content='article'>
+        <meta property='og:url' content='https://vimfeed.github.io'>
+        <meta property='og:description' content="Vim news from 'round the world.">
+        <meta property='og:image' content='http://vimfeed.github.io/assets/images/vimfeed152.png'>
+        <meta property='og:image:width' content='152'>
+        <meta property='og:image:height' content='152'>
+
+        <!-- icons -->
+        <link rel='shortcut icon' href='/assets/images/vimfeed32.png' />
+        <link rel='apple-touch-icon' href='/assets/images/vimfeed152.png' />
+
+        <!-- style -->
+        <link rel='stylesheet' type='text/css' href='/assets/style/style.css'>
+
+    </head>
+    <body>
+
+        <div class='header'>
+            <h1><a href='/'>VimFeed</a></h1>
+            <h6>Vim news from 'round the world.</h6>
+            <h5><small>Maintained by <a href='http://nkantar.com'>Nik Kantar</a> and <a href='https://github.com/VimFeed/VimFeed/graphs/contributors'>contributors</a>.</small></h5>
+            <ul>
+                <li><a href='/'>Home</a></li>
+                <li><a href='/about'>About</a></li>
+                <li><a href='/list'>List</a></li>
+                <li><a href='/feed.atom'>Feed</a></li>
+                <li><a href='https://github.com/VimFeed/VimFeed'>GitHub</a></li>
+            </ul>
+        </div>
+
+        {% block content %}{% endblock %}
+
+        <div class='footer'>Made with <a class='red' href='/humans.txt'>&hearts;</a> and <a class='vimgreen' href='http://www.vim.org'>Vim</a>.</div>
+
+    </body>
+</html>
+

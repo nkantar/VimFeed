@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    {% for entry in entries %}
+
+        <div class='entry'>
+            <div><span class='label'>no.&nbsp;&nbsp;&nbsp;&nbsp;{{ loop.index }}</span></div>
+            <div><span class='label'>when:</span>&nbsp;&nbsp;{{ entry.entry_timestamp|timestamp }}</div>
+            <div><span class='label'>where:</span>&nbsp;<a class='site_url' href='{{ entry.feed_link }}'>{{ entry.feed_title }}</a></div>
+            <div><span class='label'>what:</span>&nbsp;&nbsp;<a class='entry_url' href='{{ entry.entry_link }}'>{{ entry.entry_title }}</a></div>
+        </div>
+
+    {% endfor %}
+
+{% endblock %}

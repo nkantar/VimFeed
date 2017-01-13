@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<feed xmlns='http://www.w3.org/2005/Atom'>
+    <title>VimFeed</title>
+    <link href='http://vimfeed.github.io/feed.atom' rel='self' />
+    <link href='http://vimfeed.github.io' />
+    <updated>{% if entries|length > 0 %}{{ entries.0.entry_timestamp }}{% endif %}</updated>
+    <id>http://vimfeed.io/</id>
+    {% if entries|length > 0 %}
+        {% for entry in entries %}
+            <entry>
+                <title>[{{ entry.feed_title }}] {{ entry.entry_title }}</title>
+                <summary>{{ entry.entry_summary }}</summary>
+                <link href='{{ entry.entry_link }}' />
+                <id>{{ entry.entry_link }}</id>
+                <updated>{{ entry.entry_timestamp }}</updated>
+            </entry>
+        {% endfor %}
+    {% endif %}
+</feed>

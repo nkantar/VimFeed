@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}List{% endblock %}
+
+{% block content %}
+
+    <div class='section entry'>
+        VimFeed comprises the following feeds:
+        <ul>
+            {% for feed in feeds %}
+                <li><a href='{{ feed.url }}'>{{ feed.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+
+{% endblock %}
