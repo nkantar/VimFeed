@@ -14,7 +14,7 @@ buildsite: ## build site
 
 redeploy: ## redeploy site to https://vimfeed.github.io
 	make buildsite
-	git checkout master && git add . && git commit -m "Republishing" && git push origin master
+	cd build && git checkout master && git add . && git commit -m "Republishing" && git push origin master
 
 autoredeploy: ## autoredeploy site to https://vimfeed.github.io
 	git pull origin master --rebase
