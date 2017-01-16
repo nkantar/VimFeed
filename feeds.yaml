@@ -14,3 +14,7 @@
   site_name: 'usevim'
   site_url: http://usevim.com
   feed_url: http://usevim.com/feed.rss
+-
+  site_name: 'Ignacio Chavez'
+  site_url: http://ignaciochavez.com
+  feed_url: http://ignaciochavez.com/category/vim/feed/
