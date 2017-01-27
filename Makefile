@@ -14,7 +14,7 @@ buildsite: ## build site
 
 redeploy: ## redeploy site to https://vimfeed.github.io
 	make buildsite
-	cd build && git checkout master && git add . && git commit -m "Republishing" && GIT_SSH_COMMAND="ssh -i ~/.ssh/tidby_rsa" git push origin master
+	cd build && git add . && git commit -m "Republishing" && GIT_SSH_COMMAND="ssh -i ~/.ssh/tidby_rsa" git push origin master
 
 autoredeploy: ## autoredeploy site to https://vimfeed.github.io
 	git pull origin master --rebase
